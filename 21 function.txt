@@ -1,0 +1,33 @@
+//https://dartpad.dartlang.org/
+addNumbers(double num1, double num2) {
+  print (num1 + num2);
+}
+  
+void main() {
+  addNumbers(1, 20);
+  print('Hello!');
+}
+
+//don't use void if it has a return syntax
+double addNumbers(double num1, double num2) {
+//   print (num1 + num2);
+  return num1 + num2;
+}
+  
+void main() {
+  print(addNumbers(1, 20));
+  print(addNumbers(12.4, 20));
+  print('Hello!');
+}
+
+//Use void if there's no return
+void addNumbers(double num1, double num2) {
+//   print (num1 + num2);
+  print (num1 + num2);
+}
+  
+void main() {
+  (addNumbers(1, 20));
+  (addNumbers(12.4, 20));
+  print('Hello!');
+}
