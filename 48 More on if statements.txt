@@ -1,0 +1,13 @@
+void main () {
+  var isLoggedIn = true;
+  var userName  = 'Maxs';
+  var password = 'Testers';
+  var age = 30;
+  if (userName == 'Max' && (password == 'Tester' || age > 20)) {
+    print('Logged in');
+  } else if (isLoggedIn) {
+    print('Overruled!');
+  } else {
+    print('Failed');
+  }
+}
